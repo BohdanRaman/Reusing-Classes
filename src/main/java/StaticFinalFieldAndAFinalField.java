@@ -5,10 +5,7 @@
 
 public class StaticFinalFieldAndAFinalField {
 
-    static final int INT = 0;
-    final int anInt;
+    static final int INT = 0;    /*Final static field initialize one times on class load */
+    final int anInt  = 10;             /* Final field created every time on created instance */
 
-    public StaticFinalFieldAndAFinalField() {
-        anInt = 100;
-    }
 }

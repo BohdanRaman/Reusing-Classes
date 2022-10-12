@@ -1,5 +1,6 @@
 import amphibian_and_frog.Amphibian;
 import amphibian_and_frog.Frog;
+import blank_final.BlankFinal;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,7 +21,12 @@ public class Main {
         /* Task 18*/
         System.out.println("Task 18");
         StaticFinalFieldAndAFinalField staticFinalFieldAndAFinalField = new StaticFinalFieldAndAFinalField();
-        System.out.println(staticFinalFieldAndAFinalField.anInt);
+        System.out.println(staticFinalFieldAndAFinalField.anInt + "\n");
+
+        /* Task 19*/
+        System.out.println("Task 19");
+        new BlankFinal();
+
 
     }
 }
