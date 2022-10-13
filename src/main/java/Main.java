@@ -1,6 +1,7 @@
 import amphibian_and_frog.Amphibian;
 import amphibian_and_frog.Frog;
 import blank_final.BlankFinal;
+import loading_class.LoadingClassOnlyOnce;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,13 +21,21 @@ public class Main {
 
         /* Task 18*/
         System.out.println("Task 18");
-        StaticFinalFieldAndAFinalField staticFinalFieldAndAFinalField = new StaticFinalFieldAndAFinalField();
-        System.out.println(staticFinalFieldAndAFinalField.anInt + "\n");
+        StaticFinalFieldAndAFinalField field = new StaticFinalFieldAndAFinalField();
+        System.out.println(field.anInt);
+        System.out.println(field.getAnIntField());
+        System.out.println(field.getIntField()+ "\n");
 
         /* Task 19*/
-        System.out.println("Task 19");
-        new BlankFinal();
+        System.out.println("Task 19" + "\n");
+        BlankFinal blankFinal = new BlankFinal();
 
+        /* Task 23*/
+        System.out.println("Task 23");
+        LoadingClassOnlyOnce onlyOnce = new LoadingClassOnlyOnce();
+        System.out.println(LoadingClassOnlyOnce.getC(100));
+        System.out.println(LoadingClassOnlyOnce.getCMethod(-100));
+        System.out.println(onlyOnce.getAnInt());
 
     }
 }

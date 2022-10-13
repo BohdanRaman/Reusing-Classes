@@ -13,9 +13,7 @@ public class BlankFinal {
         cup = new CupOfCoffee();
     }
 
-    private static class CupOfCoffee {
-        public CupOfCoffee() {
-            new BlankFinal();
-        }
+    public static class CupOfCoffee {
+
     }
 }

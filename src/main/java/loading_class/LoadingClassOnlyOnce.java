@@ -8,6 +8,26 @@ package loading_class;
 
 public class LoadingClassOnlyOnce {
 
+    int anInt;
+    static int c;
+
     public LoadingClassOnlyOnce() {
+        System.out.println("print anInt");
+    }
+
+    static {
+        System.out.println("static block");
+    }
+
+    public static int getC(int i) {
+        return i;
+    }
+
+    public static int getCMethod(int c) {
+        return c;
+    }
+
+    public int getAnInt() {
+        return anInt = 10;
     }
 }
