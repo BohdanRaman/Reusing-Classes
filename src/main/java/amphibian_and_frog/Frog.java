@@ -2,15 +2,11 @@ package amphibian_and_frog;
 
 public class Frog extends Amphibian {
 
-    public int getHeightFrog(int i) {
-        return super.getHeight(i);
-    }
+    /* I can expand functionality parent class */
+    String nameFrog;
 
-    public int getWeightFrog(int i) {
-        return super.getWeight(i);
-    }
-
-    public String getTypeFrog(String s) {
-        return super.getType(s);
+    public Frog(int weight, int height, String nameFrog) {
+        super(weight, height);
+        this.nameFrog = nameFrog;
     }
 }

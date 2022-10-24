@@ -6,29 +6,24 @@ import loading_class.LoadingClassOnlyOnce;
 public class Main {
     public static void main(String[] args) {
         /* Task 17*/
-        System.out.println("Task 17");
-        Amphibian frog = new Frog();
-        Amphibian frog1 = new Frog();
-
-        System.out.println(frog.getHeight(12));
-        System.out.println(frog.getWeight(15));
-        System.out.println(frog.getType("Water" + "\n"));
-
-        frog1.getHeight(2);
-        frog1.getWeight(3);
-        frog1.getType("Water frog");
-        /* after overrides the method class Frog, in main class nothing happens */
+        Amphibian frog = new Amphibian(10, 15);
+        Amphibian frog1 = new Frog(1, 2, "GipnoZhaba");
 
         /* Task 18*/
         System.out.println("Task 18");
         StaticFinalFieldAndAFinalField field = new StaticFinalFieldAndAFinalField();
         System.out.println(field.anInt);
         System.out.println(field.getAnIntField());
-        System.out.println(field.getIntField()+ "\n");
+        System.out.println(field.getIntField() + "\n");
+        StaticFinalFieldAndAFinalField f2 = new StaticFinalFieldAndAFinalField();
+        System.out.println(f2.anInt);
+        System.out.println(f2.getAnIntField());
+        System.out.println(f2.getIntField() + "\n");
 
         /* Task 19*/
         System.out.println("Task 19" + "\n");
         BlankFinal blankFinal = new BlankFinal();
+        System.out.println();
 
         /* Task 23*/
         System.out.println("Task 23");

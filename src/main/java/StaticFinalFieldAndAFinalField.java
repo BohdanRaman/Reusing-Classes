@@ -5,14 +5,17 @@
 
 public class StaticFinalFieldAndAFinalField {
 
-    static final int INT = 17;    /*Final static field initialize one times on class load */
-    final int anInt = 100;             /* Final field created every time on created instance */
+    static final int INT = 1;            /*Final static field initialize one times on class load */
+    final int anInt = 100;               /* Final field created every time on created instance */
+
+    //  INT = 15;           I can't assign new value
+    //  anInt = 15;         I can't assign new value
 
     public int getIntField() {
-        return INT+4;
+        return INT + 20;
     }
 
     public int getAnIntField() {
-        return anInt + (-99);
+        return anInt + 50;
     }
 }

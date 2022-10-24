@@ -12,15 +12,11 @@ package amphibian_and_frog;
 
 public class Amphibian {
 
-    public int getHeight(int i) {
-        return i;
-    }
+    int weight;
+    int height;
 
-    public int getWeight(int i) {
-        return i;
-    }
-
-    public String getType(String s) {
-        return s;
+    public Amphibian(int weight, int height) {
+        this.weight = weight;
+        this.height = height;
     }
 }
