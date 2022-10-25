@@ -1,6 +1,5 @@
 import amphibian_and_frog.Amphibian;
 import amphibian_and_frog.Frog;
-import blank_final.BlankFinal;
 import loading_class.LoadingClassOnlyOnce;
 
 public class Main {
@@ -20,17 +19,11 @@ public class Main {
         System.out.println(f2.getAnIntField());
         System.out.println(f2.getIntField() + "\n");
 
-        /* Task 19*/
-        System.out.println("Task 19" + "\n");
-        BlankFinal blankFinal = new BlankFinal();
-        System.out.println();
-
         /* Task 23*/
         System.out.println("Task 23");
         LoadingClassOnlyOnce onlyOnce = new LoadingClassOnlyOnce();
         System.out.println(LoadingClassOnlyOnce.getC(100));
-        System.out.println(LoadingClassOnlyOnce.getCMethod(-100));
+        System.out.println(onlyOnce.getCMethod(-100));
         System.out.println(onlyOnce.getAnInt());
-
     }
 }

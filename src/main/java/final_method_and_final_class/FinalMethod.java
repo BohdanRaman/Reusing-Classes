@@ -5,7 +5,7 @@
 
 package final_method_and_final_class;
 
-public class FinalMethod {
-    final void getFinalMethod() {
+public class FinalMethod{
+    final void getFinalMethod(String s) {
     }
 }

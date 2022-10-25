@@ -5,9 +5,31 @@
 package final_method_and_final_class;
 
 public final class FinalClass {
-    int i = 10;
-    public int anInt;
-    final String string = "S";
+    /* I can't inherit class FinalClass*/
+
+    private int i;
+    private int anInt;
+     final String string = "S";
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public int getAnInt() {
+        return anInt;
+    }
+
+    public void setAnInt(int anInt) {
+        this.anInt = anInt;
+    }
+
+    public String getString() {
+        return string;
+    }
 
     /* I can't inherit final class FinalClass*/
 }

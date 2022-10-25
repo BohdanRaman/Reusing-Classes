@@ -10,10 +10,19 @@ public class BlankFinal {
     final CupOfCoffee cup;
 
     public BlankFinal() {
-        cup = new CupOfCoffee();
+        cup = new CupOfCoffee("Is this correct form ?");
     }
 
-    public static class CupOfCoffee {
+     class CupOfCoffee {
+        String s;
 
+        public CupOfCoffee(String s) {
+            this.s = s;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(new BlankFinal().cup.s);
     }
 }
