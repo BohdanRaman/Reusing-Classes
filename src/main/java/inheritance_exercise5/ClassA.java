@@ -4,14 +4,12 @@
  * Do not create a constructor for C. Create an object of class C and observe the results.
  */
 
-package inheritance;
+package inheritance_exercise5;
 
-public class ClassC extends ClassA{
+public class ClassA {
 
-    public static void main(String[] args) {
-        ClassB classB = new ClassB();
-        ClassC c = new ClassC();
-        System.out.println(c);
+    public ClassA() {
+        System.out.println("A");
     }
-}
 
+}

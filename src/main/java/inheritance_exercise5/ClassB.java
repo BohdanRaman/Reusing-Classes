@@ -4,7 +4,7 @@
  * Do not create a constructor for C. Create an object of class C and observe the results.
  */
 
-package inheritance;
+package inheritance_exercise5;
 
 public class ClassB {
 

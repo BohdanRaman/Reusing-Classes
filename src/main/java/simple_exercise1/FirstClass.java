@@ -2,7 +2,7 @@
  * Create a simple class. Inside a second class, define a reference to an object
  * of the first class. Use lazy initialization to instantiate this object.
  */
-package simple;
+package simple_exercise1;
 
 public class FirstClass {
     String s;

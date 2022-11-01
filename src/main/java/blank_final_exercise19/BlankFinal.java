@@ -4,7 +4,7 @@
  * final must be initialized before use, and that it cannot be changed once initialized.
  */
 
-package blank_final;
+package blank_final_exercise19;
 
 public class BlankFinal {
     final CupOfCoffee cup;

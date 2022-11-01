@@ -4,7 +4,7 @@
  * member.
  */
 
-package loading_class;
+package loading_class_exercise_23;
 
 public class LoadingClassOnlyOnce {
 

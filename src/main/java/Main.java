@@ -1,12 +1,46 @@
-import amphibian_and_frog.Amphibian;
-import amphibian_and_frog.Frog;
-import loading_class.LoadingClassOnlyOnce;
+import amphibian_and_frog_exercise16_17.Amphibian;
+import amphibian_and_frog_exercise16_17.Frog;
+import loading_class_exercise_23.LoadingClassOnlyOnce;
+import overide_example.Barcelona;
+import overide_example.FootballTeam;
+import overide_example.ManchesterUnited;
+import overide_example.Real;
+import static_exercise18.StaticFinalFieldAndAFinalField;
 
 public class Main {
     public static void main(String[] args) {
-        /* Task 17*/
-        Amphibian frog = new Amphibian(10, 15);
-        Amphibian frog1 = new Frog(1, 2, "GipnoZhaba");
+        /* Task 16*/
+        System.out.println("Task 16");
+        Amphibian frog = new Amphibian();
+        Frog frog1 = new Frog();
+        frog.setLongFrog(11);
+        frog.setWeightFrog(21);
+        frog1.setWeightFrog(2);
+        frog1.setLongFrog(3);
+        frog1.setNameFrog("Frog Zhaba");
+        frog.getSay();
+        frog1.getSay();
+        frog.jump(50);
+        System.out.println(frog);
+        System.out.println(frog1 + "\n");
+
+        /* My task */
+        System.out.println("My task");
+        FootballTeam barcelona = new Barcelona();
+        FootballTeam real = new Real();
+        FootballTeam mu = new ManchesterUnited();
+        FootballTeam.countFun(100000);
+        Barcelona.countFun(84000);
+        Real.countFun(80000);
+        ManchesterUnited.countFun(85000);
+        barcelona.funSing("go-go-go");
+        barcelona.playerCount(1);
+        real.funSing("oleeee ole ole oleeee");
+        real.playerCount(5);
+        mu.funSing("we are the champions");
+        mu.playerCount(3);
+        System.out.println();
+
 
         /* Task 18*/
         System.out.println("Task 18");

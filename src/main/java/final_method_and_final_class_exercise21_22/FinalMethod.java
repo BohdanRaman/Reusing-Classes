@@ -3,7 +3,7 @@
  * to overwrite that method.
  */
 
-package final_method_and_final_class;
+package final_method_and_final_class_exercise21_22;
 
 public class FinalMethod{
     final void getFinalMethod(String s) {

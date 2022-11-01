@@ -11,7 +11,7 @@
  * Exercise 9.
  */
 
-package root;
+package root_exercise9_10_12;
 
 public class Root {
 
