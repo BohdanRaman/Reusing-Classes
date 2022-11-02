@@ -59,7 +59,7 @@ public class Main {
         /* Task 22*/
         System.out.println("Task 22");
         FinalClass finalClass = new FinalClass();
-        finalClass.setI(13);
+        finalClass.setNumber(13);
         finalClass.setAnInt(34);
         System.out.println(finalClass);
         System.out.println("I can't inherit class FinalClass" + "\n");
@@ -69,13 +69,15 @@ public class Main {
         System.out.println("I can't inherit and override final method overrideMethod" + "\n");
 
         InheritFinalMethod inheritFinalMethod = new InheritFinalMethod();
-        System.out.println(inheritFinalMethod.getFinalMethod("I can inherit final method if he has access modifier public, but I can't override this method"));
+        System.out.println(inheritFinalMethod.getFinalMethod("I can inherit final method if he has access modifier public, " +
+                                                                 "but I can't override this method") + "\n");
 
         /* Task 23*/
         System.out.println("Task 23");
         LoadingClassOnlyOnce onlyOnce = new LoadingClassOnlyOnce();
-        System.out.println(LoadingClassOnlyOnce.getC(100));
-        System.out.println(onlyOnce.getCMethod(-100));
-        System.out.println(onlyOnce.getAnInt());
+        onlyOnce.setCount(4);
+        LoadingClassOnlyOnce.setNumber(14);
+        System.out.println(LoadingClassOnlyOnce.getNumber());
+        System.out.println(onlyOnce.getCount());
     }
 }

@@ -7,8 +7,8 @@ package final_method_and_final_class_exercise21_22;
 
 public class FinalMethod {
 
-    public final String getFinalMethod(String s) {
-        return s;
+    public final String getFinalMethod(String text) {
+        return text;
     }
 
     final void overrideMethod(String s) {

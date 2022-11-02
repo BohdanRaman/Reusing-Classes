@@ -5,17 +5,25 @@
 package final_method_and_final_class_exercise21_22;
 
 public final class FinalClass {
+    public FinalClass() {
+        System.out.println("colling constructor after block");
+    }
 
-    private int i;
+    {
+        final String TEXT = "block is colling first";
+        System.out.println("'final String TEXT': " + TEXT);
+    }
+
+    private int number;
     private int anInt;
     private final String STRING = "String";
 
-    public int getI() {
-        return i;
+    public int getNumber() {
+        return number;
     }
 
-    public void setI(int i) {
-        this.i = i;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public int getAnInt() {
@@ -33,8 +41,8 @@ public final class FinalClass {
     @Override
     public String toString() {
         return "FinalClass contains: " +
-                "i=" + i +
-                ", anInt=" + anInt +
-                ", STRING=" + STRING;
+                "i = " + number +
+                ", anInt = " + anInt +
+                ", STRING = " + STRING;
     }
 }

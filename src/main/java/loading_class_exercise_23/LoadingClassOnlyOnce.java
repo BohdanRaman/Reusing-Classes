@@ -8,26 +8,30 @@ package loading_class_exercise_23;
 
 public class LoadingClassOnlyOnce {
 
-    private int anInt;
-    static int c;
+    private int count;
+    private static int number;
 
     public LoadingClassOnlyOnce() {
-        System.out.println("print anInt");
+        System.out.println("print constructor");
     }
 
     static {
         System.out.println("static block");
     }
 
-    public static int getC(int i) {
-        return i;
+    public int getCount() {
+        return count;
     }
 
-    public int getCMethod(int c) {
-        return c;
+    public void setCount(int count) {
+        this.count = count;
     }
 
-    public int getAnInt() {
-        return anInt;
+    public static int getNumber() {
+        return number;
+    }
+
+    public static int setNumber(int number) {
+        return LoadingClassOnlyOnce.number = number;
     }
 }
