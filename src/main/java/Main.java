@@ -1,5 +1,8 @@
 import amphibian_and_frog_exercise16_17.Amphibian;
 import amphibian_and_frog_exercise16_17.Frog;
+import final_method_and_final_class_exercise21_22.FinalClass;
+import final_method_and_final_class_exercise21_22.FinalMethod;
+import final_method_and_final_class_exercise21_22.InheritFinalMethod;
 import loading_class_exercise_23.LoadingClassOnlyOnce;
 import overide_example.Barcelona;
 import overide_example.FootballTeam;
@@ -52,6 +55,21 @@ public class Main {
         System.out.println(f2.anInt);
         System.out.println(f2.getAnIntField());
         System.out.println(f2.getIntField() + "\n");
+
+        /* Task 22*/
+        System.out.println("Task 22");
+        FinalClass finalClass = new FinalClass();
+        finalClass.setI(13);
+        finalClass.setAnInt(34);
+        System.out.println(finalClass);
+        System.out.println("I can't inherit class FinalClass" + "\n");
+
+        FinalMethod finalMethod = new FinalMethod();
+        System.out.println(finalMethod.getFinalMethod("this is public final method"));
+        System.out.println("I can't inherit and override final method overrideMethod" + "\n");
+
+        InheritFinalMethod inheritFinalMethod = new InheritFinalMethod();
+        System.out.println(inheritFinalMethod.getFinalMethod("I can inherit final method if he has access modifier public, but I can't override this method"));
 
         /* Task 23*/
         System.out.println("Task 23");

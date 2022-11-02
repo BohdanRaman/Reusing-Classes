@@ -5,11 +5,10 @@
 package final_method_and_final_class_exercise21_22;
 
 public final class FinalClass {
-    /* I can't inherit class FinalClass*/
 
     private int i;
     private int anInt;
-     final String string = "S";
+    private final String STRING = "String";
 
     public int getI() {
         return i;
@@ -28,8 +27,14 @@ public final class FinalClass {
     }
 
     public String getString() {
-        return string;
+        return STRING;
     }
 
-    /* I can't inherit final class FinalClass*/
+    @Override
+    public String toString() {
+        return "FinalClass contains: " +
+                "i=" + i +
+                ", anInt=" + anInt +
+                ", STRING=" + STRING;
+    }
 }
