@@ -76,7 +76,6 @@ class Step extends Root {
         component1.dispose();
         component2.dispose();
         component3.dispose();
-
     }
 
     Component1 component1 = new Component1("com #1");

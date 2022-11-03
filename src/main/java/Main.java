@@ -3,6 +3,7 @@ import amphibian_and_frog_exercise16_17.Frog;
 import final_method_and_final_class_exercise21_22.FinalClass;
 import final_method_and_final_class_exercise21_22.FinalMethod;
 import final_method_and_final_class_exercise21_22.InheritFinalMethod;
+import finalize_my_example.ExampleFinalize;
 import loading_class_exercise_23.LoadingClassOnlyOnce;
 import overide_example.Barcelona;
 import overide_example.FootballTeam;
@@ -70,7 +71,7 @@ public class Main {
 
         InheritFinalMethod inheritFinalMethod = new InheritFinalMethod();
         System.out.println(inheritFinalMethod.getFinalMethod("I can inherit final method if he has access modifier public, " +
-                                                                 "but I can't override this method") + "\n");
+                "but I can't override this method") + "\n");
 
         /* Task 23*/
         System.out.println("Task 23");
@@ -78,6 +79,18 @@ public class Main {
         onlyOnce.setCount(4);
         LoadingClassOnlyOnce.setNumber(14);
         System.out.println(LoadingClassOnlyOnce.getNumber());
-        System.out.println(onlyOnce.getCount());
+        System.out.println(onlyOnce.getCount() + "\n");
+
+
+        /* finalize task*/
+        System.out.println("finalize task");
+        ExampleFinalize exampleFinalize = new ExampleFinalize();
+        exampleFinalize.setName("Java");
+        System.out.println(exampleFinalize.getName());
+        exampleFinalize.finalize();
+        exampleFinalize.dispose();
+        System.out.println();
+        System.gc();
+        System.out.println("If I coll 'System.gc()', finalization occurs for all objects ");
     }
 }
