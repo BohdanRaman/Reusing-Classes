@@ -88,7 +88,6 @@ public class Main {
         exampleFinalize.setName("Java");
         System.out.println(exampleFinalize.getName());
         exampleFinalize.finalize();
-        exampleFinalize.dispose();
         System.out.println();
         System.gc();
         System.out.println("If I coll 'System.gc()', finalization occurs for all objects ");

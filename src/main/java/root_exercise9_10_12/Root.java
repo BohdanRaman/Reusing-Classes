@@ -15,13 +15,13 @@ package root_exercise9_10_12;
 
 public class Root {
 
-    public Root(int c) {
-        System.out.println("Class Root");
+    public Root() {
+        System.out.println("Class Root constructor");
     }
 
-    Component1 comp1 = new Component1("#1");
-    Component2 comp2 = new Component2(2);
-    Component3 comp3 = new Component3(3f);
+    Component1 comp1 = new Component1();
+    Component2 comp2 = new Component2();
+    Component3 comp3 = new Component3();
 
 
     void dispose() {
@@ -32,13 +32,14 @@ public class Root {
     }
 
     public static void main(String[] args) {
-        Root root = new Root(5);
+        Root root = new Root();
         root.dispose();
     }
 }
 
 class Component1 {
-    public Component1(String s) {
+    public Component1() {
+        System.out.println("Component1 constructor");
     }
 
     void dispose() {
@@ -47,7 +48,8 @@ class Component1 {
 }
 
 class Component2 {
-    public Component2(int c) {
+    public Component2() {
+        System.out.println("Component2 constructor");
     }
 
     void dispose() {
@@ -56,7 +58,8 @@ class Component2 {
 }
 
 class Component3 {
-    public Component3(float f) {
+    public Component3() {
+        System.out.println("Component2 constructor");
     }
 
     void dispose() {
@@ -66,8 +69,10 @@ class Component3 {
 
 class Step extends Root {
 
-    public Step(int c) {
-        super(c);
+    public Step()
+    {
+        super();
+        System.out.println("Class Step constructor");
     }
 
     void dispose() {
@@ -78,9 +83,9 @@ class Step extends Root {
         component3.dispose();
     }
 
-    Component1 component1 = new Component1("com #1");
-    Component2 component2 = new Component2(22);
-    Component3 component3 = new Component3(33f);
+    Component1 component1 = new Component1();
+    Component2 component2 = new Component2();
+    Component3 component3 = new Component3();
 }
 
 

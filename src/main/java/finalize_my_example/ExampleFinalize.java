@@ -1,8 +1,6 @@
 package finalize_my_example;
 
-import javax.swing.*;
-
-public class ExampleFinalize extends JFrame {
+public class ExampleFinalize {
 
     private String name;
 
@@ -14,7 +12,10 @@ public class ExampleFinalize extends JFrame {
         this.name = name;
     }
 
+    void dispose() {
+        System.out.println("dispose method");
 
+    }
 
     public void finalize() {
         System.out.println("Method 'finalize' called, when there is no object reference." + "\n" +

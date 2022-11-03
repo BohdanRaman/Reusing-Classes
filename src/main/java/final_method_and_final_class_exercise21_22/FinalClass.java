@@ -6,11 +6,11 @@ package final_method_and_final_class_exercise21_22;
 
 public final class FinalClass {
     public FinalClass() {
-        System.out.println("colling constructor after block");
+        System.out.println("Colling constructor after block");
     }
 
     {
-        final String TEXT = "block is colling first";
+        final String TEXT = "Block is colling first";
         System.out.println("'final String TEXT': " + TEXT);
     }
 

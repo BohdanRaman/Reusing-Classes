@@ -13,5 +13,5 @@ public class FinalMethod {
 
     final void overrideMethod(String s) {
     }
-    /* I can't inherit abd override final method overrideMethod*/
+    /* I can't inherit and override final method overrideMethod */
 }
