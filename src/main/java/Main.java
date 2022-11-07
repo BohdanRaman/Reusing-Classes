@@ -3,7 +3,7 @@ import amphibian_and_frog_exercise16_17.Frog;
 import final_method_and_final_class_exercise21_22.FinalClass;
 import final_method_and_final_class_exercise21_22.FinalMethod;
 import final_method_and_final_class_exercise21_22.InheritFinalMethod;
-import finalize_my_example.ExampleFinalize;
+import finalize_my_example.ManagerAndExampleFinalizeAndDispose;
 import loading_class_exercise_23.LoadingClassOnlyOnce;
 import overide_example.Barcelona;
 import overide_example.FootballTeam;
@@ -84,12 +84,13 @@ public class Main {
 
         /* finalize task*/
         System.out.println("finalize task");
-        ExampleFinalize exampleFinalize = new ExampleFinalize();
-        exampleFinalize.setName("Java");
-        System.out.println(exampleFinalize.getName());
-        exampleFinalize.finalize();
+        ManagerAndExampleFinalizeAndDispose manager = new ManagerAndExampleFinalizeAndDispose();
+        manager.setName("Java");
+        System.out.println(manager.getName());
+        manager.finalize();
         System.out.println();
         System.gc();
         System.out.println("If I coll 'System.gc()', finalization occurs for all objects ");
+        manager.dispose();
     }
 }
