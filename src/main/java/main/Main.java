@@ -1,3 +1,5 @@
+package main;
+
 import amphibian_and_frog_exercise16_17.Amphibian;
 import amphibian_and_frog_exercise16_17.Frog;
 import final_method_and_final_class_exercise21_22.FinalClass;
@@ -5,11 +7,13 @@ import final_method_and_final_class_exercise21_22.FinalMethod;
 import final_method_and_final_class_exercise21_22.InheritFinalMethod;
 import finalize_my_example.ManagerAndExampleFinalizeAndDispose;
 import loading_class_exercise_23.LoadingClassOnlyOnce;
-import overide_example.Barcelona;
-import overide_example.FootballTeam;
-import overide_example.ManchesterUnited;
-import overide_example.Real;
+import overide_example.*;
 import static_exercise18.StaticFinalFieldAndAFinalField;
+
+import java.lang.annotation.Target;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,21 +34,25 @@ public class Main {
 
         /* My task */
         System.out.println("My task");
-        FootballTeam barcelona = new Barcelona();
-        FootballTeam real = new Real();
-        FootballTeam mu = new ManchesterUnited();
-        FootballTeam.countFun(100000);
-        Barcelona.countFun(84000);
-        Real.countFun(80000);
-        ManchesterUnited.countFun(85000);
-        barcelona.funSing("go-go-go");
-        barcelona.playerCount(1);
-        real.funSing("oleeee ole ole oleeee");
-        real.playerCount(5);
-        mu.funSing("we are the champions");
-        mu.playerCount(3);
-        System.out.println();
+        FootballTeam footballTeam = new FootballTeam();
+        NameTeamFun real = footballTeam.showFunTeams(Team.REAL);
+        NameTeamFun barcelona = footballTeam.showFunTeams(Team.BARCELONA);
+        NameTeamFun manchester = footballTeam.showFunTeams(Team.MANCHESTER);
 
+        real.getNameFun();
+        barcelona.getNameFun();
+        manchester.getNameFun();
+        FootballTeam realTeam = new Real();
+        FootballTeam barcelonaTeam = new Barcelona();
+        FootballTeam muTeam = new ManchesterUnited();
+
+        ArrayList<FootballTeam> teamArrays = new ArrayList<>();
+        teamArrays.add(realTeam);
+        teamArrays.add(barcelonaTeam);
+        teamArrays.add(muTeam);
+        System.out.println(teamArrays.toArray().length);
+
+        System.out.println();
 
         /* Task 18*/
         System.out.println("Task 18");

@@ -1,18 +1,9 @@
 package overide_example;
 
-public class ManchesterUnited extends FootballTeam {
-
-    public static void countFun(int count) {
-        System.out.println(count + " wow its cool");
-    }
+public class ManchesterUnited extends FootballTeam implements NameTeamFun {
 
     @Override
-    public void funSing(String text) {
-        System.out.println("We are say: " + text);
-    }
-
-    @Override
-    public void playerCount(int countPlayer) {
-        System.out.println("red card: " + countPlayer);
+    public void getNameFun() {
+        System.out.println("FC Manchester United fun");
     }
 }
