@@ -20,17 +20,12 @@ public class Main {
         /* Task 16*/
         System.out.println("Task 16");
         Amphibian frog = new Amphibian();
-        Frog frog1 = new Frog();
-        frog.setLongFrog(11);
-        frog.setWeightFrog(21);
-        frog1.setWeightFrog(2);
-        frog1.setLongFrog(3);
-        frog1.setNameFrog("Frog Zhaba");
+        Amphibian frog1 = new Frog();
         frog.getSay();
         frog1.getSay();
-        frog.jump(50);
-        System.out.println(frog);
-        System.out.println(frog1 + "\n");
+        System.out.println(frog.jump(50));
+        System.out.println(frog1.jump(43) + "\n");
+        /* All method basic class work after inherit and in child class. I can override basic class method  in inherited class */
 
         /* My task */
         System.out.println("My task");

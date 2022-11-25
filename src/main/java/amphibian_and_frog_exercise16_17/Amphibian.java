@@ -12,37 +12,12 @@ package amphibian_and_frog_exercise16_17;
 
 public class Amphibian {
 
-    private int weightFrog;
-    private int longFrog;
-
-    public int getWeightFrog() {
-        return weightFrog;
-    }
-
-    public void setWeightFrog(int weightFrog) {
-        this.weightFrog = weightFrog;
-    }
-
-    public int getLongFrog() {
-        return longFrog;
-    }
-
-    public void setLongFrog(int longFrog) {
-        this.longFrog = longFrog;
-    }
 
     public void getSay() {
         System.out.println("kva");;
     }
 
-    public int jump( int m){
-        return m;
-    }
-
-    @Override
-    public String toString() {
-        return "Amphibian:" +
-                "weightFrog=" + weightFrog +
-                ", longFrog=" + longFrog;
+    public int jump( int сm){
+        return сm;
     }
 }
