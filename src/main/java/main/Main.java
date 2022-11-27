@@ -10,10 +10,8 @@ import loading_class_exercise_23.LoadingClassOnlyOnce;
 import overide_example.*;
 import static_exercise18.StaticFinalFieldAndAFinalField;
 
-import java.lang.annotation.Target;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,12 +39,19 @@ public class Main {
         FootballTeam barcelonaTeam = new Barcelona();
         FootballTeam muTeam = new ManchesterUnited();
 
+        footballTeam.setFunSing("The best sing about FC");
+        footballTeam.setCountTeam(3);
+        footballTeam.setPlayerCount(11);
+        System.out.println(footballTeam.getFunSing());
+        System.out.println(footballTeam.getCountTeam());
+        System.out.println(footballTeam.getPlayerCount());
+        System.out.println();
+
         ArrayList<FootballTeam> teamArrays = new ArrayList<>();
         teamArrays.add(realTeam);
         teamArrays.add(barcelonaTeam);
         teamArrays.add(muTeam);
         System.out.println(teamArrays.toArray().length);
-
         System.out.println();
 
         /* Task 18*/
