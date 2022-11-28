@@ -4,6 +4,11 @@ public class Real extends FootballTeam implements NameTeamFun {
 private String funName;
 private int ageFun;
 
+    public Real(String funName, int ageFun) {
+        this.funName = funName;
+        this.ageFun = ageFun;
+    }
+
     public void setFunName(String funName) {
         this.funName = funName;
     }

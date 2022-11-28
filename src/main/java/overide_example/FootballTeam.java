@@ -42,9 +42,9 @@ public class FootballTeam {
 
     public NameTeamFun showFunTeams(Team team) {
         NameTeamFun nameFun = switch (team) {
-            case REAL -> new Real();
-            case BARCELONA -> new Barcelona();
-            case MANCHESTER -> new ManchesterUnited();
+            case REAL -> new Real("A", 13);
+            case BARCELONA -> new Barcelona("B", 24);
+            case MANCHESTER -> new ManchesterUnited("C", 54);
             default -> throw new IllegalArgumentException("Unrnown football team " + team);
         };
         return nameFun;

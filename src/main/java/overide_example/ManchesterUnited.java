@@ -4,6 +4,11 @@ public class ManchesterUnited extends FootballTeam implements NameTeamFun {
     private String funName;
     private int ageFun;
 
+    public ManchesterUnited(String funName, int ageFun) {
+        this.funName = funName;
+        this.ageFun = ageFun;
+    }
+
     public String getFunName() {
         return funName;
     }
