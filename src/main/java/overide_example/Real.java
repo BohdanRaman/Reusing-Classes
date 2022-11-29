@@ -1,8 +1,21 @@
 package overide_example;
 
+import java.util.List;
+
 public class Real extends FootballTeam implements NameTeamFun {
 private String funName;
 private int ageFun;
+    private List<FootballTeam> teamList;
+
+    @Override
+    public List<FootballTeam> getTeamList() {
+        return teamList;
+    }
+
+    @Override
+    public void setTeamList(List<FootballTeam> teamList) {
+        this.teamList = teamList;
+    }
 
     public Real(String funName, int ageFun) {
         this.funName = funName;
@@ -30,4 +43,10 @@ private int ageFun;
         System.out.println("FC Barcelona fun");
     }
 
+    @Override
+    public String toString() {
+        return "Real" +
+                " funName = '" + funName + '\'' +
+                ", ageFun = " + ageFun;
+    }
 }

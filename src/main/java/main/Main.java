@@ -51,6 +51,7 @@ public class Main {
         teamArrays.add(barcelonaTeam);
         teamArrays.add(muTeam);
         System.out.println(teamArrays.toArray().length);
+        System.out.println(teamArrays.stream().toList());
         System.out.println();
 
         /* Task 18*/

@@ -29,4 +29,11 @@ public class ManchesterUnited extends FootballTeam implements NameTeamFun {
     public void getNameFun() {
         System.out.println("FC Manchester United fun");
     }
+
+    @Override
+    public String toString() {
+        return "ManchesterUnited" +
+                " funName = '" + funName + '\'' +
+                ", ageFu = " + ageFun;
+    }
 }

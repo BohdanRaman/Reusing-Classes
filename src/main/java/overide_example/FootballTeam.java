@@ -67,7 +67,6 @@ public class FootballTeam {
         String[] array = new String[]{"Real", "Barca", "MU"};
         for (String myTeam : array) {
             System.out.println(myTeam);
-
         }
         return s;
     }

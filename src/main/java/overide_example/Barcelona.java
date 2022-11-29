@@ -29,4 +29,11 @@ public class Barcelona extends FootballTeam implements NameTeamFun {
     public void getNameFun() {
         System.out.println("FC Real Madrid fun");
     }
+
+    @Override
+    public String toString() {
+        return "Barcelona" +
+                "funName = '" + funName + '\'' +
+                ", ageFun = " + ageFun;
+    }
 }
