@@ -9,7 +9,7 @@ package inheritance_exercise5;
 public class ClassA {
 
     public ClassA() {
-        System.out.println("A");
+        System.out.println("default constructor A");
     }
 
 }

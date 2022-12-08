@@ -10,8 +10,9 @@ public class ClassC extends ClassA{
 
     public static void main(String[] args) {
         ClassB classB = new ClassB();
-        ClassC c = new ClassC();
-        System.out.println(c);
+        ClassC classC = new ClassC();
+        System.out.println(classB.getClass());
+        System.out.println(classC.getClass());
     }
 }
 

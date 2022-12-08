@@ -15,13 +15,13 @@ package root_exercise9_10_12;
 
 public class Root {
 
-    public Root() {
+    public Root( String s) {
         System.out.println("Class Root constructor");
     }
 
-    Component1 comp1 = new Component1();
-    Component2 comp2 = new Component2();
-    Component3 comp3 = new Component3();
+    Component1 comp1 = new Component1("Component1 class");
+    Component2 comp2 = new Component2("Component2 class");
+    Component3 comp3 = new Component3("Component3 class");
 
 
     void dispose() {
@@ -32,13 +32,13 @@ public class Root {
     }
 
     public static void main(String[] args) {
-        Root root = new Root();
+        Root root = new Root("Root class");
         root.dispose();
     }
 }
 
 class Component1 {
-    public Component1() {
+    public Component1(String comp1) {
         System.out.println("Component1 constructor");
     }
 
@@ -48,7 +48,7 @@ class Component1 {
 }
 
 class Component2 {
-    public Component2() {
+    public Component2(String comp1) {
         System.out.println("Component2 constructor");
     }
 
@@ -58,7 +58,7 @@ class Component2 {
 }
 
 class Component3 {
-    public Component3() {
+    public Component3(String comp1) {
         System.out.println("Component2 constructor");
     }
 
@@ -67,12 +67,12 @@ class Component3 {
     }
 }
 
-class Step extends Root {
+class Stem extends Root {
 
-    public Step()
+    public Stem(int stem)
     {
-        super();
-        System.out.println("Class Step constructor");
+        super("super constructor");
+        System.out.println("Class Stem constructor");
     }
 
     void dispose() {
@@ -83,9 +83,9 @@ class Step extends Root {
         component3.dispose();
     }
 
-    Component1 component1 = new Component1();
-    Component2 component2 = new Component2();
-    Component3 component3 = new Component3();
+    Component1 component1 = new Component1("Component1.0 class");
+    Component2 component2 = new Component2("Component2.0 class");
+    Component3 component3 = new Component3("Component3.0 class");
 }
 
 
