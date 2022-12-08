@@ -7,17 +7,19 @@ package static_exercise18;
 
 public class StaticFinalFieldAndAFinalField {
 
-   public static final int INT = 1;            /*Final static field initialize one times on class load */
-   public final int anInt = 100;               /* Final field created every time on created instance */
-
-    //  INT = 15;           I can't assign new value
+    public static final int INT = 1;            /*Final static field initialize one times on class load, constant */
+    private final int anInt = 100;               /* Final field created every time on created instance */
+    public int getAnInt() {
+        return anInt;
+    }
+//  INT = 15;           I can't assign new value
     //  anInt = 15;         I can't assign new value
 
-    public int getIntField() {
+    public int getStaticFinalField() {
         return INT + 20;
     }
 
-    public int getAnIntField() {
+    public int getFinalField() {
         return anInt + 50;
     }
 }

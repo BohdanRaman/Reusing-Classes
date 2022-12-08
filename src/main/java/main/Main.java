@@ -2,6 +2,7 @@ package main;
 
 import amphibian_and_frog_exercise16_17.Amphibian;
 import amphibian_and_frog_exercise16_17.Frog;
+import blank_final_exercise19.BlankFinal;
 import final_method_and_final_class_exercise21_22.FinalClass;
 import final_method_and_final_class_exercise21_22.FinalMethod;
 import final_method_and_final_class_exercise21_22.InheritFinalMethod;
@@ -22,7 +23,7 @@ public class Main {
         frog1.getSay();
         System.out.println(frog.jump(50));
         System.out.println(frog1.jump(43) + "\n");
-        /* All method basic class work after inherit and in child class. I can override basic class method  in inherited class */
+        /* All method basic class work after inherit and in child class. I can override basic class method in inherited class */
 
         /* My task "override_example" */
         System.out.println("My task \"override_example\"");
@@ -57,13 +58,15 @@ public class Main {
         /* Task 18*/
         System.out.println("Task 18");
         StaticFinalFieldAndAFinalField field = new StaticFinalFieldAndAFinalField();
-        System.out.println(field.anInt);
-        System.out.println(field.getAnIntField());
-        System.out.println(field.getIntField() + "\n");
+        System.out.println(field.getAnInt());
+        System.out.println(StaticFinalFieldAndAFinalField.INT);
+        System.out.println(field.getFinalField());
+        System.out.println(field.getStaticFinalField() + "\n");
         StaticFinalFieldAndAFinalField f2 = new StaticFinalFieldAndAFinalField();
-        System.out.println(f2.anInt);
-        System.out.println(f2.getAnIntField());
-        System.out.println(f2.getIntField() + "\n");
+        System.out.println(f2.getAnInt());
+        System.out.println(f2.getFinalField());
+        System.out.println(f2.getStaticFinalField() + "\n");
+
 
         /* Task 22*/
         System.out.println("Task 22");

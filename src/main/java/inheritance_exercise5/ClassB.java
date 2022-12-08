@@ -9,6 +9,6 @@ package inheritance_exercise5;
 public class ClassB {
 
     public ClassB() {
-        System.out.println("B");
+        System.out.println("default constructor B");
     }
 }
