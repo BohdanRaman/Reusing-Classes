@@ -22,7 +22,6 @@ public class BlankFinal {
     }
 
     public static void main(String[] args) {
-
         System.out.println(new BlankFinal().cup.s);
     }
 }

@@ -12,7 +12,6 @@ package amphibian_and_frog_exercise16_17;
 
 public class Amphibian {
 
-
     public void getSay() {
         System.out.println("kva");;
     }
