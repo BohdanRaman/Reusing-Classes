@@ -1,20 +1,9 @@
 package overide_example;
 
-import java.util.List;
-
 public class FootballTeam {
-    private List<FootballTeam> teamList;
     protected int countTeam;
     private String funSing;
     private int playerCount;
-
-    public List<FootballTeam> getTeamList() {
-        return teamList;
-    }
-
-    public void setTeamList(List<FootballTeam> teamList) {
-        this.teamList = teamList;
-    }
 
     public int getCountTeam() {
         return countTeam;
@@ -40,6 +29,19 @@ public class FootballTeam {
         this.playerCount = playerCount;
     }
 
+    public static void fillTribune(int person) {
+
+        if (person >= 70000 && person <= 80000) {
+            System.out.println("sold out");
+        }
+        if (person >= 0 && person < 70000) {
+            System.out.println("ticket really expensive");
+        }
+        if (person < 0 || person > 80000) {
+            System.out.println("it is not possible to accommodate this number of fans ");
+        }
+    }
+
     public NameTeamFun showFunTeams(Team team) {
         NameTeamFun nameFun = switch (team) {
             case REAL -> new Real("A", 13);
@@ -61,15 +63,26 @@ public class FootballTeam {
         }
     }
 
+    public final void fun(){
+        System.out.println("I can't override final method");
+    }
+
     /* I can't use this method with "default" access control  in other package.
-  I can override this method */
-     String nameMyFavoriteTeam(String s) {
+      I can override this method */
+    String nameMyFavoriteTeam(String s) {
         String[] array = new String[]{"Real", "Barca", "MU"};
         for (String myTeam : array) {
             System.out.println(myTeam);
         }
         return s;
     }
+
+
+
+
+    public FootballTeam[] getFootballTeam(int getTeam) {
+        FootballTeam [] footballTeam = new FootballTeam[3];
+ //       footballTeam [0] = new FootballTeam(Barcelona);
+        return footballTeam;
+    }
 }
-
-

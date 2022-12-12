@@ -25,6 +25,19 @@ public class ManchesterUnited extends FootballTeam implements NameTeamFun {
         this.ageFun = ageFun;
     }
 
+    public static void fillTribune(int person) {
+
+        if (person >= 70000 && person <= 80000) {
+            System.out.println("sold out");
+        }
+        if (person >= 0 && person < 70000) {
+            System.out.println("ticket really expensive");
+        }
+        if (person < 0 || person > 80000) {
+            System.out.println("it is not possible to accommodate this number of fans ");
+        }
+    }
+
     @Override
     public void getNameFun() {
         System.out.println("FC Manchester United fun");

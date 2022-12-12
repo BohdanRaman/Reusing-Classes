@@ -2,7 +2,6 @@ package main;
 
 import amphibian_and_frog_exercise16_17.Amphibian;
 import amphibian_and_frog_exercise16_17.Frog;
-import blank_final_exercise19.BlankFinal;
 import final_method_and_final_class_exercise21_22.FinalClass;
 import final_method_and_final_class_exercise21_22.FinalMethod;
 import final_method_and_final_class_exercise21_22.InheritFinalMethod;
@@ -38,6 +37,10 @@ public class Main {
         FootballTeam realTeam = new Real("Alehandro", 34);
         FootballTeam barcelonaTeam = new Barcelona("Huan", 23);
         FootballTeam muTeam = new ManchesterUnited("Tom" , 18);
+        System.out.println(realTeam);
+        System.out.println(barcelonaTeam);
+        System.out.println(muTeam);
+        footballTeam.fun();
 
         footballTeam.setFunSing("The best sing about FC");
         footballTeam.setCountTeam(3);
@@ -47,12 +50,11 @@ public class Main {
         System.out.println(footballTeam.getPlayerCount());
         System.out.println();
 
-        ArrayList<FootballTeam> teamArrays = new ArrayList<>();
-        teamArrays.add(realTeam);
-        teamArrays.add(barcelonaTeam);
-        teamArrays.add(muTeam);
-        System.out.println(teamArrays.toArray().length);
-        System.out.println(teamArrays.stream().toList());
+        Real.fillTribune(350);
+        Barcelona.fillTribune(84533);
+        ManchesterUnited.fillTribune(79000);
+
+
         System.out.println();
 
         /* Task 18*/
