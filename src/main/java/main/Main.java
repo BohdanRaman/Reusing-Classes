@@ -10,7 +10,7 @@ import loading_class_exercise_23.LoadingClassOnlyOnce;
 import overide_example.*;
 import static_exercise18.StaticFinalFieldAndAFinalField;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,21 +25,14 @@ public class Main {
         /* All method basic class work after inherit and in child class. I can override basic class method in inherited class */
 
         /* My task "override_example" */
-        System.out.println("My task \"override_example\"");
+        System.out.println("My task \"override_example\":");
         FootballTeam footballTeam = new FootballTeam();
         NameTeamFun real = footballTeam.showFunTeams(Team.REAL);
         NameTeamFun barcelona = footballTeam.showFunTeams(Team.BARCELONA);
         NameTeamFun manchester = footballTeam.showFunTeams(Team.MANCHESTER);
-
         real.getNameFun();
         barcelona.getNameFun();
         manchester.getNameFun();
-        FootballTeam realTeam = new Real("Alehandro", 34);
-        FootballTeam barcelonaTeam = new Barcelona("Huan", 23);
-        FootballTeam muTeam = new ManchesterUnited("Tom" , 18);
-        System.out.println(realTeam);
-        System.out.println(barcelonaTeam);
-        System.out.println(muTeam);
         footballTeam.fun();
 
         footballTeam.setFunSing("The best sing about FC");
@@ -53,8 +46,8 @@ public class Main {
         Real.fillTribune(350);
         Barcelona.fillTribune(84533);
         ManchesterUnited.fillTribune(79000);
-
-
+        System.out.println("-----------------------------------------------");
+        footballTeam.getFootballTeam();
         System.out.println();
 
         /* Task 18*/

@@ -5,6 +5,9 @@ public class FootballTeam {
     private String funSing;
     private int playerCount;
 
+    public FootballTeam() {
+    }
+
     public int getCountTeam() {
         return countTeam;
     }
@@ -29,25 +32,12 @@ public class FootballTeam {
         this.playerCount = playerCount;
     }
 
-    public static void fillTribune(int person) {
-
-        if (person >= 70000 && person <= 80000) {
-            System.out.println("sold out");
-        }
-        if (person >= 0 && person < 70000) {
-            System.out.println("ticket really expensive");
-        }
-        if (person < 0 || person > 80000) {
-            System.out.println("it is not possible to accommodate this number of fans ");
-        }
-    }
-
     public NameTeamFun showFunTeams(Team team) {
         NameTeamFun nameFun = switch (team) {
             case REAL -> new Real("A", 13);
             case BARCELONA -> new Barcelona("B", 24);
             case MANCHESTER -> new ManchesterUnited("C", 54);
-            default -> throw new IllegalArgumentException("Unrnown football team " + team);
+            default -> throw new IllegalArgumentException("Unknown football team " + team);
         };
         return nameFun;
     }
@@ -63,7 +53,7 @@ public class FootballTeam {
         }
     }
 
-    public final void fun(){
+    public final void fun() {
         System.out.println("I can't override final method");
     }
 
@@ -77,12 +67,11 @@ public class FootballTeam {
         return s;
     }
 
-
-
-
-    public FootballTeam[] getFootballTeam(int getTeam) {
-        FootballTeam [] footballTeam = new FootballTeam[3];
- //       footballTeam [0] = new FootballTeam(Barcelona);
-        return footballTeam;
+    public void  getFootballTeam() {
+        FootballTeam[] footballTeam =
+                {new Barcelona("Alexandro Gomez", 32), new Real("Lucas", 54), new ManchesterUnited("Stiw", 42)};
+        for (FootballTeam f : footballTeam) {
+            System.out.println(f);
+        }
     }
 }
